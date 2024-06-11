@@ -1,4 +1,4 @@
 void main() {
-  var n = 3.14159265359;
-  print('Double: ${n.toStringAsFixed(2)}');
+  String str = "Holberton School";
+  print('${str * 3}\n${str.subString(0, 9)}');
 }
