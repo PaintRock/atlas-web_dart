@@ -1,5 +1,5 @@
 void helloFunction(String str) {
-  print('Hello, $str from dart');
+  print('Hello $str from dart');
 }
 
 void main() {
