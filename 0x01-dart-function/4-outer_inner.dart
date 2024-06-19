@@ -5,6 +5,6 @@ void outer(String name, String id) {
   inner();
 }
 
-void main() {
-  outer("Youssef Belhadj", "001");
-}
+// void main() {
+//   outer("Youssef Belhadj", "001");
+// }
