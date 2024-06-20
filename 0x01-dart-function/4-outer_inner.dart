@@ -1,8 +1,5 @@
 String outer(String name, String id) {
   List<String> words = name.split(' ');
-  if (words.length < 2) {
-    return name; // Return original name if it doesn't have at least two words
-  }
   
   String firstWord = words[0];
   String secondWord = words[1];
