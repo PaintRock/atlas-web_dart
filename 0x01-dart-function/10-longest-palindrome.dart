@@ -1,5 +1,5 @@
 String longestPalindrome(String s) {
-  if (s.length < 2) return s.isEmpty ? "none" : s;
+  if (s.length < 2) return "none";
   
   int start = 0;
   int maxLength = 0;
@@ -15,7 +15,7 @@ String longestPalindrome(String s) {
     }
   }
 
-  return maxLength > 1 ? s.substring(start, start + maxLength) : "none";
+  return maxLength > 2 ? s.substring(start, start + maxLength) : "none";
 }
 
 int expandAroundCenter(String s, int left, int right) {
