@@ -1,13 +1,4 @@
 void outer(String name, String id) {
-  void inner() {
-    print('Name: $name\nID: $id');
-  }
-  inner();
-}
-
-void main() {
-  outer("Youssef Belhadj", "001");
-}String outer(String name, String id) {
   String inner() {
     List<String> words = name.split(' ');
     
@@ -19,11 +10,9 @@ void main() {
 
     return 'Hello Agent $modifiedFirstWord your id is $id';
   }
-  
-  return inner();
+  print(inner());
 }
 
 void main() {
-  String result = outer("Youssef Belhadj", "001");
-  print(result);
+  outer("Youssef Belhadj", "001");
 }
