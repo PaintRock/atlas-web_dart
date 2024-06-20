@@ -1,5 +1,5 @@
 void outer(String name, String id) {
-  void inner() {
+  String inner() {
     print('Name: $name\nID: $id');
   }
   inner();
