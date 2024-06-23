@@ -10,7 +10,7 @@ class Password {
            _password.contains(RegExp(r'[a-z]')) &&
            _password.contains(RegExp(r'[A-Z]'));
   }
-//tetter
+//getter
   String get password {
     return _password;
   }
