@@ -31,8 +31,7 @@ class User extends Password {
       id: userJson['id'],
       name: userJson['name'],
       age: userJson['age'],
-      heigh
-      t: userJson['height'],
+      height: userJson['height'],
       user_password: userJson['user_password'],
     );
   }
