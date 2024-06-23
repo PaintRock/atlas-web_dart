@@ -1,19 +1,19 @@
 class _Password {
-  String _password = '';
+  String password = '';
 
-  Password();
+  _Password({required this.password});
 
   bool isValid() {
-    return _password.length >= 8 &&
-           _password.length <= 16 &&
-           _password.contains(RegExp(r'[0-9]')) &&
-           _password.contains(RegExp(r'[a-z]')) &&
-           _password.contains(RegExp(r'[A-Z]'));
+    return password.length >= 8 &&
+           password.length <= 16 &&
+           password.contains(RegExp(r'[0-9]')) &&
+           password.contains(RegExp(r'[a-z]')) &&
+           password.contains(RegExp(r'[A-Z]'));
   }
 
   @override
   String toString() {
-    return 'Your Password is: $_password';
+    return 'Your Password is: $password';
   }
 }
 
