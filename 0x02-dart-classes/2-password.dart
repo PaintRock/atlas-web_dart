@@ -8,8 +8,7 @@ class Password {
            password.length <= 16 &&
            password.contains(RegExp(r'[0-9]')) &&
            password.contains(RegExp(r'[a-z]')) &&
-           password.contains(RegExp(r'[A-Z]')) &&
-           password.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'));
+           password.contains(RegExp(r'[A-Z]'));
   }
 
   @override
@@ -17,6 +16,7 @@ class Password {
     return 'Your Password is: $password';
   }
 }
+
 void main() {
   final ps = Password();
   ps.password = "Just3z";
