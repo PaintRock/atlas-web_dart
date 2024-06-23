@@ -11,9 +11,16 @@ class Password {
            _password.contains(RegExp(r'[A-Z]'));
   }
 
+  // Getter
   String get password => _password;
 
+  // Setter
   set password(String newPassword) {
     _password = newPassword;
+  }
+
+  @override
+  String toString() {
+    return 'Your Password is: $_password';
   }
 }
