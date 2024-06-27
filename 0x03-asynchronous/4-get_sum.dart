@@ -11,7 +11,7 @@ Future<num> calculateTotal() async {
       total += double.parse(await fetchProductPrice(product));
     }
     
-    return total.round;
+    return total.round();
   } catch (error) {
     return -1;
   }
