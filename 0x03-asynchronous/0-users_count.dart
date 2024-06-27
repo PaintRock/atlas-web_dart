@@ -1,6 +1,6 @@
-import '0-util.dart';
+import '0-utils.dart';
 
-Future <void>usersCount() async {
-  int count = await fetchUsersCount();
+Future<void> userCount() async {
+  int count = await fetchUserData();
   print(count);
 }
